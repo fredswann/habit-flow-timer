@@ -5,7 +5,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
 const skillInput = z.object({
   name: z.string().trim().min(1).max(80),
-  color: z.string().trim().min(3).max(20),
+  color: z.string().trim().regex(/^#[0-9a-fA-F]{3,8}$/, "color must be a hex value like #7c9cff"),
   daily_goal: z.number().int().min(0).max(100000).nullable(),
 });
 
