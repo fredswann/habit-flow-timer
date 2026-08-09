@@ -39,11 +39,16 @@ export const updateSkill = createServerFn({ method: "POST" })
     skillInput.partial().extend({ id: z.string().uuid(), archived: z.boolean().optional() }).parse(input),
   )
   .handler(async ({ data, context }) => {
-    const patch: Record<string, unknown> = {};
-    if (data.name !== undefined) patch["name"] = data.name;
-    if (data.color !== undefined) patch["color"] = data.color;
-    if (data.daily_goal !== undefined) patch["daily_goal"] = data.daily_goal;
-    if (data.archived !== undefined) patch["archived"] = data.archived;
+    const patch: {
+      name?: string;
+      color?: string;
+      daily_goal?: number | null;
+      archived?: boolean;
+    } = {};
+    if (data.name !== undefined) patch.name = data.name;
+    if (data.color !== undefined) patch.color = data.color;
+    if (data.daily_goal !== undefined) patch.daily_goal = data.daily_goal;
+    if (data.archived !== undefined) patch.archived = data.archived;
     const { error } = await context.supabase.from("skills").update(patch).eq("id", data.id);
     if (error) throw new Error(error.message);
     return { ok: true };
