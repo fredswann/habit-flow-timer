@@ -14,7 +14,86 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      sessions: {
+        Row: {
+          created_at: string
+          duration_seconds: number
+          ended_at: string
+          executions: number
+          id: string
+          mode: string
+          note: string | null
+          skill_id: string
+          started_at: string
+          target_seconds: number | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          duration_seconds: number
+          ended_at: string
+          executions?: number
+          id?: string
+          mode: string
+          note?: string | null
+          skill_id: string
+          started_at: string
+          target_seconds?: number | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          duration_seconds?: number
+          ended_at?: string
+          executions?: number
+          id?: string
+          mode?: string
+          note?: string | null
+          skill_id?: string
+          started_at?: string
+          target_seconds?: number | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "sessions_skill_id_fkey"
+            columns: ["skill_id"]
+            isOneToOne: false
+            referencedRelation: "skills"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      skills: {
+        Row: {
+          archived: boolean
+          color: string
+          created_at: string
+          daily_goal: number | null
+          id: string
+          name: string
+          user_id: string
+        }
+        Insert: {
+          archived?: boolean
+          color?: string
+          created_at?: string
+          daily_goal?: number | null
+          id?: string
+          name: string
+          user_id: string
+        }
+        Update: {
+          archived?: boolean
+          color?: string
+          created_at?: string
+          daily_goal?: number | null
+          id?: string
+          name?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
