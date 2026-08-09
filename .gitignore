@@ -20,6 +20,9 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# Claude Code plugins (local-only)
+.claude/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
