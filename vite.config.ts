@@ -7,6 +7,19 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    // Public browser configuration for this project's Lovable Cloud client.
+    // Defining it here keeps production builds working when managed VITE_*
+    // injection is unavailable during a publish build.
+    define: {
+      "import.meta.env.VITE_SUPABASE_URL": JSON.stringify(
+        "https://emqbmhtxtvcgxmomtlkc.supabase.co",
+      ),
+      "import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY": JSON.stringify(
+        "sb_publishable_7YB05WUUf9EgMvdJWCPVig_FQxyk6WD",
+      ),
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
