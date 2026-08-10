@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-09T00:00:00.000Z",
+  "title": "Design System: Repwise",
+  "extensions": {
+    "colorMeta": {
+      "deep-slate": {
+        "role": "neutral",
+        "displayName": "Deep Slate",
+        "canonical": "oklch(0.18 0.012 264)",
+        "tonalRamp": [
+          "oklch(0.10 0.012 264)",
+          "oklch(0.18 0.012 264)",
+          "oklch(0.27 0.012 264)",
+          "oklch(0.35 0.012 264)",
+          "oklch(0.45 0.012 264)",
+          "oklch(0.58 0.012 264)",
+          "oklch(0.72 0.012 264)",
+          "oklch(0.90 0.012 264)"
+        ]
+      },
+      "slate-panel": {
+        "role": "neutral",
+        "displayName": "Slate Panel",
+        "canonical": "oklch(0.225 0.014 264)",
+        "tonalRamp": [
+          "oklch(0.12 0.014 264)",
+          "oklch(0.225 0.014 264)",
+          "oklch(0.30 0.014 264)",
+          "oklch(0.38 0.014 264)",
+          "oklch(0.48 0.014 264)",
+          "oklch(0.60 0.014 264)",
+          "oklch(0.74 0.014 264)",
+          "oklch(0.92 0.014 264)"
+        ]
+      },
+      "slate-raised": {
+        "role": "neutral",
+        "displayName": "Slate Raised",
+        "canonical": "oklch(0.27 0.014 264)",
+        "tonalRamp": [
+          "oklch(0.14 0.014 264)",
+          "oklch(0.27 0.014 264)",
+          "oklch(0.34 0.014 264)",
+          "oklch(0.42 0.014 264)",
+          "oklch(0.52 0.014 264)",
+          "oklch(0.63 0.014 264)",
+          "oklch(0.76 0.014 264)",
+          "oklch(0.93 0.014 264)"
+        ]
+      },
+      "paper-white": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "oklch(0.96 0.006 260)",
+        "tonalRamp": [
+          "oklch(0.20 0.006 260)",
+          "oklch(0.35 0.006 260)",
+          "oklch(0.50 0.006 260)",
+          "oklch(0.65 0.006 260)",
+          "oklch(0.78 0.006 260)",
+          "oklch(0.88 0.006 260)",
+          "oklch(0.96 0.006 260)",
+          "oklch(0.99 0.006 260)"
+        ]
+      },
+      "slate-mist": {
+        "role": "neutral",
+        "displayName": "Slate Mist",
+        "canonical": "oklch(0.70 0.014 260)",
+        "tonalRamp": [
+          "oklch(0.20 0.014 260)",
+          "oklch(0.33 0.014 260)",
+          "oklch(0.46 0.014 260)",
+          "oklch(0.58 0.014 260)",
+          "oklch(0.70 0.014 260)",
+          "oklch(0.80 0.014 260)",
+          "oklch(0.89 0.014 260)",
+          "oklch(0.96 0.014 260)"
+        ]
+      },
+      "warm-amber": {
+        "role": "primary",
+        "displayName": "Warm Amber",
+        "canonical": "oklch(0.79 0.13 68)",
+        "tonalRamp": [
+          "oklch(0.28 0.10 68)",
+          "oklch(0.40 0.12 68)",
+          "oklch(0.52 0.13 68)",
+          "oklch(0.63 0.13 68)",
+          "oklch(0.72 0.13 68)",
+          "oklch(0.79 0.13 68)",
+          "oklch(0.87 0.11 68)",
+          "oklch(0.94 0.07 68)"
+        ]
+      },
+      "ink-on-amber": {
+        "role": "neutral",
+        "displayName": "Ink on Amber",
+        "canonical": "oklch(0.19 0.02 60)"
+      },
+      "warning-red": {
+        "role": "destructive",
+        "displayName": "Warning Red",
+        "canonical": "oklch(0.64 0.2 22)",
+        "tonalRamp": [
+          "oklch(0.22 0.14 22)",
+          "oklch(0.33 0.17 22)",
+          "oklch(0.44 0.19 22)",
+          "oklch(0.54 0.20 22)",
+          "oklch(0.64 0.20 22)",
+          "oklch(0.73 0.17 22)",
+          "oklch(0.83 0.12 22)",
+          "oklch(0.92 0.06 22)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(1 0 0 / 12%)"
+      },
+      "input-line": {
+        "role": "neutral",
+        "displayName": "Input Line",
+        "canonical": "oklch(1 0 0 / 16%)"
+      },
+      "skill-apricot": { "role": "user-identity", "displayName": "Apricot", "canonical": "#f0a35e" },
+      "skill-mint": { "role": "user-identity", "displayName": "Mint", "canonical": "#7fd1a6" },
+      "skill-sky": { "role": "user-identity", "displayName": "Sky", "canonical": "#7fa8f0" },
+      "skill-orchid": { "role": "user-identity", "displayName": "Orchid", "canonical": "#d78ff0" },
+      "skill-coral": { "role": "user-identity", "displayName": "Coral", "canonical": "#f07f8f" },
+      "skill-wheat": { "role": "user-identity", "displayName": "Wheat", "canonical": "#e3d97f" }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "The landing page's single H1 only." },
+      "title": { "displayName": "Title", "purpose": "Page-level headings inside the authenticated app." },
+      "body": { "displayName": "Body", "purpose": "Default copy, descriptions, helper text." },
+      "label": { "displayName": "Label", "purpose": "Mono eyebrows, table headers, small captions." },
+      "readout": { "displayName": "Readout", "purpose": "The live practice timer clock — the loudest element in the product." }
+    },
+    "shadows": [
+      { "name": "residual-control-shadow", "value": "0 1px 2px rgba(0,0,0,0.15)", "purpose": "Barely-visible shadow shipped by default on buttons/inputs; not used as a depth statement." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default transition easing for colors, hover states, and the timer progress bar width." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single most important action per view — Add skill, Start timer, Save session, Sign in.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Add skill</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; border-radius: var(--radius-md, 10px); font-size: 14px; font-weight: 500; font-family: var(--font-sans); height: 36px; padding: 8px 16px; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.4,0,0.2,1); } .ds-btn-primary { background: var(--color-primary); color: var(--color-primary-foreground); border: none; } .ds-btn-primary:hover { background: color-mix(in oklch, var(--color-primary) 90%, black); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--color-ring); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary navigation actions, e.g. \"Back to skills\" or \"Continue with Google\".",
+      "html": "<button class=\"ds-btn ds-btn-outline\">Continue with Google</button>",
+      "css": ".ds-btn-outline { background: var(--color-background); color: var(--color-foreground); border: 1px solid var(--color-input); } .ds-btn-outline:hover { background: var(--color-accent); } .ds-btn-outline:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--color-ring); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-emphasis actions inside dense rows — Archive, Sign out.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\">Sign out</button>",
+      "css": ".ds-btn-ghost { background: transparent; color: var(--color-muted-foreground); border: none; } .ds-btn-ghost:hover { background: var(--color-accent); color: var(--color-accent-foreground); }"
+    },
+    {
+      "name": "Card Surface",
+      "kind": "card",
+      "refersTo": "card-surface",
+      "description": "The recurring content-surface recipe used across skills, stats, history and landing feature cards.",
+      "html": "<div class=\"ds-card\"><p class=\"ds-card-eyebrow\">Guitar scales</p><p class=\"ds-card-value\">128 reps</p></div>",
+      "css": ".ds-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl, 16px); padding: 20px; } .ds-card-eyebrow { font-family: var(--font-sans); font-size: 18px; font-weight: 500; color: var(--color-foreground); margin: 0; } .ds-card-value { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted-foreground); margin: 4px 0 0; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Text/number entry across forms — skill name, email, executions.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"e.g. Guitar scales\" />",
+      "css": ".ds-input { display: flex; height: 36px; width: 100%; border-radius: var(--radius-md, 10px); border: 1px solid var(--color-input); background: transparent; padding: 4px 12px; font-family: var(--font-sans); font-size: 14px; color: var(--color-foreground); transition: border-color 0.2s; } .ds-input::placeholder { color: var(--color-muted-foreground); } .ds-input:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--color-ring); }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Top-bar navigation items; promotes to a filled pill when active or hovered.",
+      "html": "<a class=\"ds-nav-link ds-nav-link-active\" href=\"#\">Skills</a>",
+      "css": ".ds-nav-link { display: inline-block; border-radius: var(--radius-md, 10px); padding: 6px 12px; font-family: var(--font-sans); font-size: 14px; color: var(--color-muted-foreground); text-decoration: none; transition: background-color 0.2s, color 0.2s; } .ds-nav-link:hover, .ds-nav-link-active { background: var(--color-secondary); color: var(--color-foreground); }"
+    },
+    {
+      "name": "Timer Readout",
+      "kind": "custom",
+      "refersTo": "timer-readout",
+      "description": "Signature component: the practice page's centered mono clock and progress bar, tinted with the active skill's own color while running.",
+      "html": "<div class=\"ds-timer-card\"><div class=\"ds-timer-clock\" style=\"color: var(--skill-color, var(--color-accent));\">12:34</div><div class=\"ds-timer-track\"><div class=\"ds-timer-fill\" style=\"width: 62%; background: var(--skill-color, var(--color-accent));\"></div></div></div>",
+      "css": ".ds-timer-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-2xl, 20px); padding: 40px; text-align: center; } .ds-timer-clock { font-family: var(--font-mono); font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; } .ds-timer-track { margin: 24px auto 0; height: 4px; max-width: 24rem; border-radius: 9999px; overflow: hidden; background: var(--color-secondary); } .ds-timer-fill { height: 100%; border-radius: 9999px; transition: width 0.2s linear; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practice Room",
+    "overview": "Repwise reads like a quiet, low-lit room built for one thing: repetition. The interface stays out of the way — deep slate surfaces, near-black by design, lit only by a single warm amber accent that behaves like a lamp over a music stand or a workbench light left on after hours. Nothing else in the palette competes with it: red exists only for destructive actions, and color otherwise belongs to the user, not the system, in the six identity colors they assign to their own skills.\n\nThe system is built around measurement. Every number that represents something real — a countdown, a rep count, a streak, a timestamp — renders in JetBrains Mono, tabular and exact, the way a stopwatch or a mixing console would show it. Everything else — headings, labels, buttons, body copy — speaks in Space Grotesk, a single sans voice with no separate \"display\" face; the room doesn't need two typefaces to feel considered, it needs one that stays consistent while the mono readouts carry the drama.\n\nSurfaces are flat and bordered, not lifted. Depth comes from a single step of lightness (cards sit one shade brighter than the page behind them) plus a barely-there hairline border, not from shadows. The one deliberate exception is the app's top navigation, which floats a translucent, blurred bar over content — the single \"glass\" moment in an otherwise matte system, reserved for the chrome that has to stay legible while everything scrolls beneath it.",
+    "keyCharacteristics": [
+      "One accent color (warm amber), used sparingly — buttons, active timer state, streak flame, focus rings",
+      "Mono digits for anything measured or timestamped; sans for everything else",
+      "Flat, bordered surfaces — no drop shadows as the depth mechanism",
+      "A single dark theme; no light mode exists",
+      "User-assigned skill colors are the only other saturated color in the system"
+    ],
+    "rules": [
+      { "name": "The Single Accent Rule", "body": "Warm Amber is the only saturated color the system controls. If a screen needs a second point of emphasis, reach for weight, size, or the mono readout treatment before reaching for a second hue.", "section": "colors" },
+      { "name": "The One Theme Rule", "body": "Repwise has exactly one visual theme — the dark palette defined in :root. A .dark class block exists in styles.css as unused shadcn scaffolding with different, mismatched token values; it is never toggled anywhere in the app and must not be treated as an alternate mode.", "section": "colors" },
+      { "name": "The Readout Rule", "body": "Any number that represents a live measurement or a logged fact is set in JetBrains Mono with tabular figures. Any label, instruction, or narrative copy is set in Space Grotesk. Mixing the two within the same value is the tell that something is being treated as decoration instead of data.", "section": "typography" },
+      { "name": "The Border-Not-Shadow Rule", "body": "When a surface needs to separate from what's behind it, reach for the hairline border and a lightness step first. Reserve blur-and-translucency for chrome that must float above scrolling content (so far: only the top nav); it is not a general card treatment.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do set every measured or logged number (timer, reps, reps/min, streaks, stat tiles, timestamps) in JetBrains Mono with tabular figures.",
+      "Do build new content surfaces with the card recipe: Slate Panel background, 16px radius, Hairline border, 20px padding, no shadow.",
+      "Do let the practicing skill's own color take over the timer readout and progress bar while a session is running.",
+      "Do keep Warm Amber as the only system-controlled accent; introduce a second hue only through the user's own skill-color picker."
+    ],
+    "donts": [
+      "Don't add drop shadows to cards or panels as a way to show emphasis or hierarchy — use the lightness-step + hairline-border language instead.",
+      "Don't activate or extend the .dark class block in styles.css — it's unused, mismatched legacy scaffolding, not a real second theme.",
+      "Don't use a skill's user-chosen identity color for system chrome (buttons, nav, system states) — that color belongs to the skill, not the UI.",
+      "Don't mix mono and sans within the same value (e.g. a partly-mono timestamp) — a value is either data (mono) or prose (sans), never both."
+    ]
+  }
+}
